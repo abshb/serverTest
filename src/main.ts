@@ -5,7 +5,7 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   app.enableCors();
   await app.listen(4000);
-  app.setGlobalPrefix('api'); // Set the global prefix here
+  // app.setGlobalPrefix('api'); // Set the global prefix here
   console.log(`Application is running on: ${await app.getUrl()}`);
 }
 bootstrap();
